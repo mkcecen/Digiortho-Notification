@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timer_builder/timer_builder.dart';
+import 'file_utils.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,8 +11,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   DateTime alert;
   bool isStart = false;
-  int totalPlackCount = 100;
-  int nowPlackCount = 1;
+  int nowPlackCount;
+  String readText;
   FlutterLocalNotificationsPlugin localNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
@@ -26,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     alert = DateTime.now();
+    parseValue();
     initializeNotifications();
   }
 
@@ -72,9 +74,7 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Icon(
-                  // isStart ? Icons.alarm_on : Icons.alarm_off,
                   Icons.alarm_on,
-                  // color: isStart ? Colors.green : Colors.red,
                   color: Colors.green,
                   size: 48,
                 ),
@@ -93,28 +93,34 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.notifications),
-        //onPressed: _showNotification,
+        child: Icon(Icons.help),
+        onPressed: () {
+          createHelpDialog(context);
+        },
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: Icon(Icons.help),
-      //   onPressed: () {
-      //     createHelpDialog(context);
-      //   },
-      // ),
     );
   }
 
   _startTimer() async {
     isStart = true;
-    alert = DateTime.now().add(Duration(seconds: 5));
+    alert = DateTime.now().add(Duration(minutes: 5));
+    if (nowPlackCount != null) {
+      nowPlackCount += 1;
+    } else {
+      nowPlackCount = 1;
+    }
+    String value = isStart.toString() +
+        ";" +
+        alert.toString() +
+        ";" +
+        nowPlackCount.toString();
+    FileUtils.saveToFile(value);
     _showNotification(alert);
   }
 
   String formatDuration(Duration d) {
     String lbl = "";
     if (isStart == true) {
-      debugPrint("formatDuration : $d");
       String f(int n) {
         return n.toString().padLeft(2, '0');
       }
@@ -139,11 +145,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   _showNotification(DateTime time) async {
-    DateTime now = DateTime.now().toUtc().add(
-          Duration(seconds: 5),
-        );
     await singleNotification(
-      now,
+      time,
       '$nowPlackCount . Plak Değişimi',
       'Plak değiştime zamanın geldi. Sakın unutma :) ',
       98123871,
@@ -171,5 +174,15 @@ class _HomePageState extends State<HomePage> {
         );
       },
     );
+  }
+
+  parseValue() async {
+    readText = await FileUtils.readFromFile();
+    if (readText != null) {
+      var arr = readText.split(';');
+      isStart = arr[0].toLowerCase() == 'true';
+      alert = DateTime.parse(arr[1]);
+      nowPlackCount = int.parse(arr[2]);
+    }
   }
 }

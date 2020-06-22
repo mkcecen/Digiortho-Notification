@@ -68,6 +68,12 @@
       "languageVersion": "2.2"
     },
     {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.7.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "flutter_local_notifications",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-0.7.1+3",
       "packageUri": "lib/",
@@ -112,6 +118,12 @@
     {
       "name": "path",
       "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.6.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-0.4.1",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -206,13 +218,19 @@
       "languageVersion": "2.6"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.4"
+    },
+    {
       "name": "digiorthoo",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-06-22T14:16:12.606681Z",
+  "generated": "2020-06-22T20:33:02.561158Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

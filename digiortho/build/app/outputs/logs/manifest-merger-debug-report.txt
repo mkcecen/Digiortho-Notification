@@ -7,6 +7,7 @@ INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\ap
 MERGED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:1:1-65:12
 MERGED from [:android_alarm_manager] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\android_alarm_manager\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:flutter_local_notifications] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\flutter_local_notifications\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\path_provider\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\e0e1f595b104922d18ef659a540496bc\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\c82069e012d079076228d2416c181d91\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.0.0.aar\aaa2ae411e5d08a4a26287cb086dff35\AndroidManifest.xml:17:1-22:12
@@ -160,6 +161,8 @@ MERGED from [:android_alarm_manager] C:\Users\mkcec\Desktop\Digiortho-Notificati
 MERGED from [:android_alarm_manager] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\android_alarm_manager\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\flutter_local_notifications\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_local_notifications] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\flutter_local_notifications\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\path_provider\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\build\path_provider\intermediates\lýbrary_manýfest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\e0e1f595b104922d18ef659a540496bc\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\appcompat-1.0.0.aar\e0e1f595b104922d18ef659a540496bc\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\c82069e012d079076228d2416c181d91\AndroidManifest.xml:20:5-22:41
