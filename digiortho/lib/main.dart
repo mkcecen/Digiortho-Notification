@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:digiorthoo/home.dart';
+import 'package:digiortho/home.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

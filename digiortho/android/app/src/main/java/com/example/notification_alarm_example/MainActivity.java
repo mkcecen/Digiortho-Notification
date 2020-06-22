@@ -1,4 +1,4 @@
-package com.example.digiorthoo;
+package com.example.digiortho;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

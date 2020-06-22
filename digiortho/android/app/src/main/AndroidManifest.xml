@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.digiorthoo">
+    package="com.example.digiortho">
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -17,7 +17,7 @@
 
     <application
         android:name=".Application"
-        android:label="digiorthoo"
+        android:label="digiortho"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

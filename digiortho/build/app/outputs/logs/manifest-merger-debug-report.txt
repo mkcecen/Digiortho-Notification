@@ -40,7 +40,7 @@ INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\ap
 INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:2:5-37
+		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:2:5-36
 		INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\debug\AndroidManifest.xml
 	android:versionName
@@ -84,12 +84,12 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\mk
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\mkcec\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\117fd956d36534d96cb9b016cabfa992\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:20:9-34
 	android:icon
 		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:21:9-43
 	android:name
 		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:19:9-36
-activity#com.example.digiorthoo.MainActivity
+activity#com.example.digiortho.MainActivity
 ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:22:9-40:20
 	android:launchMode
 		ADDED from C:\Users\mkcec\Desktop\Digiortho-Notification\digiortho\android\app\src\main\AndroidManifest.xml:24:13-43

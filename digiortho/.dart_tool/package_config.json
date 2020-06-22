@@ -224,13 +224,13 @@
       "languageVersion": "2.4"
     },
     {
-      "name": "digiorthoo",
+      "name": "digiortho",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-06-22T20:33:02.561158Z",
+  "generated": "2020-06-22T20:37:18.407232Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }

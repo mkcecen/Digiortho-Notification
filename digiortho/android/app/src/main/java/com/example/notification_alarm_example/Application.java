@@ -1,4 +1,4 @@
-package com.example.digiorthoo;
+package com.example.digiortho;
 
 import io.flutter.app.FlutterApplication;
 import io.flutter.plugin.common.PluginRegistry;

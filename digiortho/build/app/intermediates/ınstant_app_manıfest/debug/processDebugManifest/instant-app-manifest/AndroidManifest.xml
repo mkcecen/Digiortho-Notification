@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.digiorthoo"
+    package="com.example.digiortho"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0.0" >
@@ -26,13 +26,13 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
-        android:name="com.example.digiorthoo.Application"
+        android:name="com.example.digiortho.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="digiorthoo" >
+        android:label="digiortho" >
         <activity
-            android:name="com.example.digiorthoo.MainActivity"
+            android:name="com.example.digiortho.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
