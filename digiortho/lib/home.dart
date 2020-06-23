@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     alert = DateTime.now();
+//    nowPlackCount=0;
     parseValue();
     initializeNotifications();
   }
@@ -62,6 +63,16 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+//            Column(
+//              crossAxisAlignment: CrossAxisAlignment.start,
+//              mainAxisSize: MainAxisSize.min,
+//              children: <Widget>[
+//                Text(
+//                  'Şu an $nowPlackCount. plaktasınız.',
+//                  style: textStyle,
+//                ),
+//              ],
+//            ),
             RaisedButton(
               onPressed: _startTimer,
               child: Text(
@@ -117,6 +128,7 @@ class _HomePageState extends State<HomePage> {
         nowPlackCount.toString();
     FileUtils.saveToFile(value);
     _showNotification(alert);
+    initState();
   }
 
   String formatDuration(Duration d) {
@@ -143,6 +155,7 @@ class _HomePageState extends State<HomePage> {
   _changeValue() {
     isStart = false;
     nowPlackCount += 1;
+    alert = DateTime.now();
   }
 
   _showNotification(DateTime time) async {
@@ -181,8 +194,16 @@ class _HomePageState extends State<HomePage> {
     readText = await FileUtils.readFromFile();
     if (readText != null) {
       var arr = readText.split(';');
-      isStart = arr[0].toLowerCase() == 'true';
-      alert = DateTime.parse(arr[1]);
+      var oldTime = DateTime.parse(arr[1]);
+      var newTime = DateTime.now();
+      var difference = newTime.difference(oldTime);
+      if (difference < Duration(seconds: 0)) {
+        print('oldTime => $oldTime');
+        print('newTime => $newTime');
+        print('difference => $difference');
+        isStart = arr[0].toLowerCase() == 'true';
+        alert = oldTime;
+      }
       nowPlackCount = int.parse(arr[2]);
     }
   }
