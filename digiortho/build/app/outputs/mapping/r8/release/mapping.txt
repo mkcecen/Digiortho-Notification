@@ -11101,9 +11101,6 @@ androidx.versionedparcelable.VersionedParcelParcel -> androidx.versionedparcelab
     1:1:java.lang.String readString():226:226 -> i
 androidx.versionedparcelable.VersionedParcelable -> androidx.versionedparcelable.d:
 com.dexterous.flutterlocalnotifications.BitmapSource -> com.dexterous.flutterlocalnotifications.a:
-    com.dexterous.flutterlocalnotifications.BitmapSource[] $VALUES -> c
-    com.dexterous.flutterlocalnotifications.BitmapSource Drawable -> a
-    com.dexterous.flutterlocalnotifications.BitmapSource FilePath -> b
     1:2:void <clinit>():4:5 -> <clinit>
     3:3:void <clinit>():3:3 -> <clinit>
     1:1:void <init>(java.lang.String,int):3:3 -> <init>
@@ -11264,23 +11261,12 @@ com.dexterous.flutterlocalnotifications.FlutterLocalNotificationsPlugin$2 -> com
     2:2:void <clinit>():339:339 -> <clinit>
     3:3:void <clinit>():265:265 -> <clinit>
 com.dexterous.flutterlocalnotifications.NotificationStyle -> com.dexterous.flutterlocalnotifications.e:
-    com.dexterous.flutterlocalnotifications.NotificationStyle Default -> a
-    com.dexterous.flutterlocalnotifications.NotificationStyle[] $VALUES -> f
-    com.dexterous.flutterlocalnotifications.NotificationStyle Inbox -> d
-    com.dexterous.flutterlocalnotifications.NotificationStyle Messaging -> e
-    com.dexterous.flutterlocalnotifications.NotificationStyle BigPicture -> b
-    com.dexterous.flutterlocalnotifications.NotificationStyle BigText -> c
     1:5:void <clinit>():4:8 -> <clinit>
     6:6:void <clinit>():3:3 -> <clinit>
     1:1:void <init>(java.lang.String,int):3:3 -> <init>
     1:1:com.dexterous.flutterlocalnotifications.NotificationStyle valueOf(java.lang.String):3:3 -> valueOf
     1:1:com.dexterous.flutterlocalnotifications.NotificationStyle[] values():3:3 -> values
 com.dexterous.flutterlocalnotifications.RepeatInterval -> com.dexterous.flutterlocalnotifications.f:
-    com.dexterous.flutterlocalnotifications.RepeatInterval EveryMinute -> a
-    com.dexterous.flutterlocalnotifications.RepeatInterval Hourly -> b
-    com.dexterous.flutterlocalnotifications.RepeatInterval Daily -> c
-    com.dexterous.flutterlocalnotifications.RepeatInterval[] $VALUES -> e
-    com.dexterous.flutterlocalnotifications.RepeatInterval Weekly -> d
     1:4:void <clinit>():4:7 -> <clinit>
     5:5:void <clinit>():3:3 -> <clinit>
     1:1:void <init>(java.lang.String,int):3:3 -> <init>
@@ -11343,10 +11329,6 @@ com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver$1 -> com.d
     com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver this$0 -> d
     1:1:void <init>(com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver):42:42 -> <init>
 com.dexterous.flutterlocalnotifications.models.IconSource -> com.dexterous.flutterlocalnotifications.a.a:
-    com.dexterous.flutterlocalnotifications.models.IconSource FilePath -> b
-    com.dexterous.flutterlocalnotifications.models.IconSource ContentUri -> c
-    com.dexterous.flutterlocalnotifications.models.IconSource Drawable -> a
-    com.dexterous.flutterlocalnotifications.models.IconSource[] $VALUES -> d
     1:3:void <clinit>():4:6 -> <clinit>
     4:4:void <clinit>():3:3 -> <clinit>
     1:1:void <init>(java.lang.String,int):3:3 -> <init>
@@ -11360,9 +11342,6 @@ com.dexterous.flutterlocalnotifications.models.MessageDetails -> com.dexterous.f
     java.lang.String dataMimeType -> d
     1:6:void <init>(java.lang.String,java.lang.Long,com.dexterous.flutterlocalnotifications.models.PersonDetails,java.lang.String,java.lang.String):10:15 -> <init>
 com.dexterous.flutterlocalnotifications.models.NotificationChannelAction -> com.dexterous.flutterlocalnotifications.a.c:
-    com.dexterous.flutterlocalnotifications.models.NotificationChannelAction[] $VALUES -> c
-    com.dexterous.flutterlocalnotifications.models.NotificationChannelAction CreateIfNotExists -> a
-    com.dexterous.flutterlocalnotifications.models.NotificationChannelAction Update -> b
     1:2:void <clinit>():4:5 -> <clinit>
     3:3:void <clinit>():3:3 -> <clinit>
     1:1:void <init>(java.lang.String,int):3:3 -> <init>
@@ -11541,12 +11520,6 @@ com.google.gson.FieldAttributes -> b.a.a.c:
     java.lang.reflect.Field field -> a
     1:3:void <init>(java.lang.reflect.Field):44:46 -> <init>
 com.google.gson.FieldNamingPolicy -> b.a.a.i:
-    com.google.gson.FieldNamingPolicy IDENTITY -> a
-    com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE -> b
-    com.google.gson.FieldNamingPolicy[] $VALUES -> f
-    com.google.gson.FieldNamingPolicy UPPER_CAMEL_CASE_WITH_SPACES -> c
-    com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_UNDERSCORES -> d
-    com.google.gson.FieldNamingPolicy LOWER_CASE_WITH_DASHES -> e
     1:1:void <clinit>():37:37 -> <clinit>
     2:2:void <clinit>():53:53 -> <clinit>
     3:3:void <clinit>():72:72 -> <clinit>
@@ -11555,34 +11528,33 @@ com.google.gson.FieldNamingPolicy -> b.a.a.i:
     6:6:void <clinit>():31:31 -> <clinit>
     1:1:void <init>(java.lang.String,int):31:31 -> <init>
     2:2:void <init>(java.lang.String,int,com.google.gson.FieldNamingPolicy$1):31:31 -> <init>
-    1:5:java.lang.String separateCamelCase(java.lang.String,java.lang.String):124:128 -> a
-    6:6:java.lang.String separateCamelCase(java.lang.String,java.lang.String):130:130 -> a
-    7:7:java.lang.String separateCamelCase(java.lang.String,java.lang.String):132:132 -> a
-    8:8:java.lang.String upperCaseFirstLetter(java.lang.String):139:139 -> a
-    9:10:java.lang.String upperCaseFirstLetter(java.lang.String):141:142 -> a
-    11:11:java.lang.String upperCaseFirstLetter(java.lang.String):145:145 -> a
-    12:13:java.lang.String upperCaseFirstLetter(java.lang.String):149:150 -> a
-    14:16:java.lang.String upperCaseFirstLetter(java.lang.String):153:155 -> a
-    17:19:java.lang.String modifyString(char,java.lang.String,int):162:164 -> a
+    1:3:java.lang.String modifyString(char,java.lang.String,int):162:164 -> modifyString
+    1:5:java.lang.String separateCamelCase(java.lang.String,java.lang.String):124:128 -> separateCamelCase
+    6:6:java.lang.String separateCamelCase(java.lang.String,java.lang.String):130:130 -> separateCamelCase
+    7:7:java.lang.String separateCamelCase(java.lang.String,java.lang.String):132:132 -> separateCamelCase
+    1:1:java.lang.String upperCaseFirstLetter(java.lang.String):139:139 -> upperCaseFirstLetter
+    2:3:java.lang.String upperCaseFirstLetter(java.lang.String):141:142 -> upperCaseFirstLetter
+    4:4:java.lang.String upperCaseFirstLetter(java.lang.String):145:145 -> upperCaseFirstLetter
+    5:6:java.lang.String upperCaseFirstLetter(java.lang.String):149:150 -> upperCaseFirstLetter
+    7:9:java.lang.String upperCaseFirstLetter(java.lang.String):153:155 -> upperCaseFirstLetter
     1:1:com.google.gson.FieldNamingPolicy valueOf(java.lang.String):31:31 -> valueOf
     1:1:com.google.gson.FieldNamingPolicy[] values():31:31 -> values
 com.google.gson.FieldNamingPolicy$1 -> b.a.a.d:
     1:1:void <init>(java.lang.String,int):37:37 -> <init>
-    1:1:java.lang.String translateName(java.lang.reflect.Field):39:39 -> a
+    1:1:java.lang.String translateName(java.lang.reflect.Field):39:39 -> translateName
 com.google.gson.FieldNamingPolicy$2 -> b.a.a.e:
     1:1:void <init>(java.lang.String,int):53:53 -> <init>
-    1:1:java.lang.String translateName(java.lang.reflect.Field):55:55 -> a
+    1:1:java.lang.String translateName(java.lang.reflect.Field):55:55 -> translateName
 com.google.gson.FieldNamingPolicy$3 -> b.a.a.f:
     1:1:void <init>(java.lang.String,int):72:72 -> <init>
-    1:1:java.lang.String translateName(java.lang.reflect.Field):74:74 -> a
+    1:1:java.lang.String translateName(java.lang.reflect.Field):74:74 -> translateName
 com.google.gson.FieldNamingPolicy$4 -> b.a.a.g:
     1:1:void <init>(java.lang.String,int):90:90 -> <init>
-    1:1:java.lang.String translateName(java.lang.reflect.Field):92:92 -> a
+    1:1:java.lang.String translateName(java.lang.reflect.Field):92:92 -> translateName
 com.google.gson.FieldNamingPolicy$5 -> b.a.a.h:
     1:1:void <init>(java.lang.String,int):113:113 -> <init>
-    1:1:java.lang.String translateName(java.lang.reflect.Field):115:115 -> a
+    1:1:java.lang.String translateName(java.lang.reflect.Field):115:115 -> translateName
 com.google.gson.FieldNamingStrategy -> b.a.a.j:
-    java.lang.String translateName(java.lang.reflect.Field) -> a
 com.google.gson.Gson -> b.a.a.p:
     com.google.gson.reflect.TypeToken NULL_KEY_SURROGATE -> a
     com.google.gson.internal.ConstructorConstructor constructorConstructor -> e
@@ -11861,9 +11833,6 @@ com.google.gson.JsonSyntaxException -> b.a.a.D:
     2:2:void <init>(java.lang.String,java.lang.Throwable):34:34 -> <init>
     3:3:void <init>(java.lang.Throwable):45:45 -> <init>
 com.google.gson.LongSerializationPolicy -> b.a.a.G:
-    com.google.gson.LongSerializationPolicy STRING -> b
-    com.google.gson.LongSerializationPolicy DEFAULT -> a
-    com.google.gson.LongSerializationPolicy[] $VALUES -> c
     1:1:void <clinit>():34:34 -> <clinit>
     2:2:void <clinit>():45:45 -> <clinit>
     3:3:void <clinit>():27:27 -> <clinit>
@@ -11873,8 +11842,10 @@ com.google.gson.LongSerializationPolicy -> b.a.a.G:
     1:1:com.google.gson.LongSerializationPolicy[] values():27:27 -> values
 com.google.gson.LongSerializationPolicy$1 -> b.a.a.E:
     1:1:void <init>(java.lang.String,int):34:34 -> <init>
+    1:1:com.google.gson.JsonElement serialize(java.lang.Long):36:36 -> serialize
 com.google.gson.LongSerializationPolicy$2 -> b.a.a.F:
     1:1:void <init>(java.lang.String,int):45:45 -> <init>
+    1:1:com.google.gson.JsonElement serialize(java.lang.Long):47:47 -> serialize
 com.google.gson.TypeAdapter -> b.a.a.I:
     1:1:void <init>():119:119 -> <init>
     java.lang.Object read(com.google.gson.stream.JsonReader) -> a
@@ -13537,17 +13508,6 @@ com.google.gson.stream.JsonReader$1 -> b.a.a.d.a:
     7:7:void promoteNameToValue(com.google.gson.stream.JsonReader):1609:1609 -> a
     8:9:void promoteNameToValue(com.google.gson.stream.JsonReader):1611:1612 -> a
 com.google.gson.stream.JsonToken -> b.a.a.d.c:
-    com.google.gson.stream.JsonToken END_ARRAY -> b
-    com.google.gson.stream.JsonToken BEGIN_ARRAY -> a
-    com.google.gson.stream.JsonToken STRING -> f
-    com.google.gson.stream.JsonToken NAME -> e
-    com.google.gson.stream.JsonToken END_OBJECT -> d
-    com.google.gson.stream.JsonToken BEGIN_OBJECT -> c
-    com.google.gson.stream.JsonToken END_DOCUMENT -> j
-    com.google.gson.stream.JsonToken NULL -> i
-    com.google.gson.stream.JsonToken BOOLEAN -> h
-    com.google.gson.stream.JsonToken NUMBER -> g
-    com.google.gson.stream.JsonToken[] $VALUES -> k
     1:1:void <clinit>():31:31 -> <clinit>
     2:2:void <clinit>():37:37 -> <clinit>
     3:3:void <clinit>():43:43 -> <clinit>
@@ -14556,55 +14516,35 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$AppSwitcherDescriptio
     int color -> a
     1:3:void <init>(int,java.lang.String):637:639 -> <init>
 io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness -> io.flutter.embedding.engine.e.i$b:
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness LIGHT -> a
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness DARK -> b
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness[] $VALUES -> c
-    java.lang.String encodedName -> d
     1:2:void <clinit>():669:670 -> <clinit>
     3:3:void <clinit>():668:668 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):684:685 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness fromValue(java.lang.String):674:675 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness fromValue(java.lang.String):679:679 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness fromValue(java.lang.String):674:675 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness fromValue(java.lang.String):679:679 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness valueOf(java.lang.String):668:668 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness[] values():668:668 -> values
 io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat -> io.flutter.embedding.engine.e.i$c:
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat[] $VALUES -> b
-    java.lang.String encodedName -> c
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat PLAIN_TEXT -> a
     1:1:void <clinit>():691:691 -> <clinit>
     2:2:void <clinit>():690:690 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):706:707 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat fromValue(java.lang.String):696:697 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat fromValue(java.lang.String):701:701 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat fromValue(java.lang.String):696:697 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat fromValue(java.lang.String):701:701 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat valueOf(java.lang.String):690:690 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat[] values():690:690 -> values
 io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation -> io.flutter.embedding.engine.e.i$d:
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation PORTRAIT_DOWN -> b
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation PORTRAIT_UP -> a
-    java.lang.String encodedName -> f
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation[] $VALUES -> e
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation LANDSCAPE_RIGHT -> d
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation LANDSCAPE_LEFT -> c
     1:4:void <clinit>():578:581 -> <clinit>
     5:5:void <clinit>():577:577 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):595:596 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation fromValue(java.lang.String):585:586 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation fromValue(java.lang.String):590:590 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation fromValue(java.lang.String):585:586 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation fromValue(java.lang.String):590:590 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation valueOf(java.lang.String):577:577 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation[] values():577:577 -> values
 io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType -> io.flutter.embedding.engine.e.i$e:
-    java.lang.String encodedName -> g
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType[] $VALUES -> f
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType SELECTION_CLICK -> e
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType MEDIUM_IMPACT -> c
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType HEAVY_IMPACT -> d
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType STANDARD -> a
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType LIGHT_IMPACT -> b
     1:5:void <clinit>():552:556 -> <clinit>
     6:6:void <clinit>():551:551 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):571:572 -> <init>
-    1:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType fromValue(java.lang.String):560:562 -> a
-    4:4:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType fromValue(java.lang.String):566:566 -> a
+    1:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType fromValue(java.lang.String):560:562 -> fromValue
+    4:4:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType fromValue(java.lang.String):566:566 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType valueOf(java.lang.String):551:551 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType[] values():551:551 -> values
 io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler -> io.flutter.embedding.engine.e.i$f:
@@ -14621,14 +14561,11 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandle
     void restoreSystemUiOverlays() -> b
     java.util.List getSystemGestureExclusionRects() -> c
 io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType -> io.flutter.embedding.engine.e.i$g:
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType[] $VALUES -> b
-    java.lang.String encodedName -> c
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType CLICK -> a
     1:1:void <clinit>():531:531 -> <clinit>
     2:2:void <clinit>():530:530 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):545:546 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType fromValue(java.lang.String):535:536 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType fromValue(java.lang.String):540:540 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType fromValue(java.lang.String):535:536 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType fromValue(java.lang.String):540:540 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType valueOf(java.lang.String):530:530 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType[] values():530:530 -> values
 io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle -> io.flutter.embedding.engine.e.i$h:
@@ -14639,15 +14576,11 @@ io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle -> 
     java.lang.Integer statusBarColor -> a
     1:6:void <init>(java.lang.Integer,io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness,java.lang.Integer,io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness,java.lang.Integer):659:664 -> <init>
 io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay -> io.flutter.embedding.engine.e.i$i:
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay BOTTOM_OVERLAYS -> b
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay TOP_OVERLAYS -> a
-    io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay[] $VALUES -> c
-    java.lang.String encodedName -> d
     1:2:void <clinit>():608:609 -> <clinit>
     3:3:void <clinit>():607:607 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):623:624 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay fromValue(java.lang.String):613:614 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay fromValue(java.lang.String):618:618 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay fromValue(java.lang.String):613:614 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay fromValue(java.lang.String):618:618 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay valueOf(java.lang.String):607:607 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay[] values():607:607 -> values
 io.flutter.embedding.engine.systemchannels.PlatformViewsChannel -> io.flutter.embedding.engine.e.l:
@@ -14759,10 +14692,6 @@ io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder -> io.
     8:8:void send():57:57 -> a
     9:9:void send():68:68 -> a
 io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness -> io.flutter.embedding.engine.e.m$b:
-    io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness[] $VALUES -> c
-    io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness light -> a
-    io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness dark -> b
-    java.lang.String name -> d
     1:2:void <clinit>():79:80 -> <clinit>
     3:3:void <clinit>():78:78 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):84:85 -> <init>
@@ -14849,17 +14778,11 @@ io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType -> io.flut
     1:4:void <init>(io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType,boolean,boolean):345:348 -> <init>
     1:4:io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType fromJson(org.json.JSONObject):335:338 -> a
 io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization -> io.flutter.embedding.engine.e.p$c:
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization WORDS -> b
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization SENTENCES -> c
-    java.lang.String encodedName -> f
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization CHARACTERS -> a
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization[] $VALUES -> e
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization NONE -> d
     1:4:void <clinit>():381:384 -> <clinit>
     5:5:void <clinit>():380:380 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):397:398 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization fromValue(java.lang.String):387:388 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization fromValue(java.lang.String):392:392 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization fromValue(java.lang.String):387:388 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization fromValue(java.lang.String):392:392 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization valueOf(java.lang.String):380:380 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization[] values():380:380 -> values
 io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState -> io.flutter.embedding.engine.e.p$d:
@@ -14876,21 +14799,11 @@ io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandl
     void clearClient() -> b
     void hide() -> c
 io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType -> io.flutter.embedding.engine.e.p$f:
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType NUMBER -> c
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType DATETIME -> b
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType MULTILINE -> e
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType PHONE -> d
-    java.lang.String encodedName -> j
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType TEXT -> a
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType URL -> g
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType[] $VALUES -> i
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType EMAIL_ADDRESS -> f
-    io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType VISIBLE_PASSWORD -> h
     1:8:void <clinit>():354:361 -> <clinit>
     9:9:void <clinit>():353:353 -> <clinit>
     1:2:void <init>(java.lang.String,int,java.lang.String):374:375 -> <init>
-    1:2:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType fromValue(java.lang.String):364:365 -> a
-    3:3:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType fromValue(java.lang.String):369:369 -> a
+    1:2:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType fromValue(java.lang.String):364:365 -> fromValue
+    3:3:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType fromValue(java.lang.String):369:369 -> fromValue
     1:1:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType valueOf(java.lang.String):353:353 -> valueOf
     1:1:io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType[] values():353:353 -> values
 io.flutter.plugin.common.ActivityLifecycleListener -> c.a.b.a.a:
@@ -15322,10 +15235,6 @@ io.flutter.plugin.editing.TextInputPlugin$InputTarget -> c.a.b.b.c$a:
     int id -> b
     1:3:void <init>(io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type,int):405:407 -> <init>
 io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type -> c.a.b.b.c$a$a:
-    io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type[] $VALUES -> d
-    io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type PLATFORM_VIEW -> c
-    io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type NO_TARGET -> a
-    io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type FRAMEWORK_CLIENT -> b
     1:1:void <clinit>():397:397 -> <clinit>
     2:2:void <clinit>():400:400 -> <clinit>
     3:3:void <clinit>():402:402 -> <clinit>
@@ -16254,40 +16163,12 @@ io.flutter.view.AccessibilityBridge$4 -> io.flutter.view.f:
     5:7:void onTouchExplorationStateChanged(boolean):362:364 -> onTouchExplorationStateChanged
     8:8:void onTouchExplorationStateChanged(boolean):363:363 -> onTouchExplorationStateChanged
 io.flutter.view.AccessibilityBridge$AccessibilityFeature -> io.flutter.view.g$a:
-    int value -> e
-    io.flutter.view.AccessibilityBridge$AccessibilityFeature ACCESSIBLE_NAVIGATION -> a
-    io.flutter.view.AccessibilityBridge$AccessibilityFeature[] $VALUES -> d
-    io.flutter.view.AccessibilityBridge$AccessibilityFeature INVERT_COLORS -> b
-    io.flutter.view.AccessibilityBridge$AccessibilityFeature DISABLE_ANIMATIONS -> c
     1:3:void <clinit>():1698:1700 -> <clinit>
     4:4:void <clinit>():1697:1697 -> <clinit>
     1:2:void <init>(java.lang.String,int,int):1704:1705 -> <init>
     1:1:io.flutter.view.AccessibilityBridge$AccessibilityFeature valueOf(java.lang.String):1697:1697 -> valueOf
     1:1:io.flutter.view.AccessibilityBridge$AccessibilityFeature[] values():1697:1697 -> values
 io.flutter.view.AccessibilityBridge$Action -> io.flutter.view.g$b:
-    io.flutter.view.AccessibilityBridge$Action MOVE_CURSOR_BACKWARD_BY_WORD -> u
-    io.flutter.view.AccessibilityBridge$Action MOVE_CURSOR_FORWARD_BY_WORD -> t
-    io.flutter.view.AccessibilityBridge$Action DISMISS -> s
-    io.flutter.view.AccessibilityBridge$Action LONG_PRESS -> b
-    io.flutter.view.AccessibilityBridge$Action TAP -> a
-    io.flutter.view.AccessibilityBridge$Action SCROLL_DOWN -> f
-    io.flutter.view.AccessibilityBridge$Action SCROLL_UP -> e
-    io.flutter.view.AccessibilityBridge$Action SCROLL_RIGHT -> d
-    io.flutter.view.AccessibilityBridge$Action SCROLL_LEFT -> c
-    io.flutter.view.AccessibilityBridge$Action MOVE_CURSOR_FORWARD_BY_CHARACTER -> j
-    io.flutter.view.AccessibilityBridge$Action SHOW_ON_SCREEN -> i
-    io.flutter.view.AccessibilityBridge$Action DECREASE -> h
-    io.flutter.view.AccessibilityBridge$Action INCREASE -> g
-    io.flutter.view.AccessibilityBridge$Action CUT -> n
-    io.flutter.view.AccessibilityBridge$Action COPY -> m
-    int value -> w
-    io.flutter.view.AccessibilityBridge$Action SET_SELECTION -> l
-    io.flutter.view.AccessibilityBridge$Action MOVE_CURSOR_BACKWARD_BY_CHARACTER -> k
-    io.flutter.view.AccessibilityBridge$Action CUSTOM_ACTION -> r
-    io.flutter.view.AccessibilityBridge$Action DID_LOSE_ACCESSIBILITY_FOCUS -> q
-    io.flutter.view.AccessibilityBridge$Action[] $VALUES -> v
-    io.flutter.view.AccessibilityBridge$Action DID_GAIN_ACCESSIBILITY_FOCUS -> p
-    io.flutter.view.AccessibilityBridge$Action PASTE -> o
     1:21:void <clinit>():1632:1652 -> <clinit>
     22:22:void <clinit>():1631:1631 -> <clinit>
     1:2:void <init>(java.lang.String,int,int):1656:1657 -> <init>
@@ -16314,30 +16195,6 @@ io.flutter.view.AccessibilityBridge$CustomAccessibilityAction -> io.flutter.view
     1:1:int access$3600(io.flutter.view.AccessibilityBridge$CustomAccessibilityAction):1742:1742 -> d
     1:1:int access$3800(io.flutter.view.AccessibilityBridge$CustomAccessibilityAction):1742:1742 -> e
 io.flutter.view.AccessibilityBridge$Flag -> io.flutter.view.g$d:
-    io.flutter.view.AccessibilityBridge$Flag SCOPES_ROUTE -> l
-    io.flutter.view.AccessibilityBridge$Flag IS_OBSCURED -> k
-    io.flutter.view.AccessibilityBridge$Flag IS_HEADER -> j
-    io.flutter.view.AccessibilityBridge$Flag IS_IN_MUTUALLY_EXCLUSIVE_GROUP -> i
-    io.flutter.view.AccessibilityBridge$Flag IS_LIVE_REGION -> p
-    io.flutter.view.AccessibilityBridge$Flag IS_IMAGE -> o
-    io.flutter.view.AccessibilityBridge$Flag IS_HIDDEN -> n
-    io.flutter.view.AccessibilityBridge$Flag NAMES_ROUTE -> m
-    io.flutter.view.AccessibilityBridge$Flag IS_READ_ONLY -> t
-    io.flutter.view.AccessibilityBridge$Flag HAS_IMPLICIT_SCROLLING -> s
-    io.flutter.view.AccessibilityBridge$Flag[] $VALUES -> w
-    io.flutter.view.AccessibilityBridge$Flag IS_TOGGLED -> r
-    io.flutter.view.AccessibilityBridge$Flag HAS_TOGGLED_STATE -> q
-    io.flutter.view.AccessibilityBridge$Flag IS_LINK -> v
-    io.flutter.view.AccessibilityBridge$Flag IS_FOCUSABLE -> u
-    int value -> x
-    io.flutter.view.AccessibilityBridge$Flag IS_BUTTON -> d
-    io.flutter.view.AccessibilityBridge$Flag IS_SELECTED -> c
-    io.flutter.view.AccessibilityBridge$Flag IS_CHECKED -> b
-    io.flutter.view.AccessibilityBridge$Flag HAS_CHECKED_STATE -> a
-    io.flutter.view.AccessibilityBridge$Flag IS_ENABLED -> h
-    io.flutter.view.AccessibilityBridge$Flag HAS_ENABLED_STATE -> g
-    io.flutter.view.AccessibilityBridge$Flag IS_FOCUSED -> f
-    io.flutter.view.AccessibilityBridge$Flag IS_TEXT_FIELD -> e
     1:19:void <clinit>():1664:1682 -> <clinit>
     20:22:void <clinit>():1685:1687 -> <clinit>
     23:23:void <clinit>():1663:1663 -> <clinit>
@@ -16513,16 +16370,12 @@ io.flutter.view.AccessibilityBridge$SemanticsNode -> io.flutter.view.g$f:
     1:1:java.util.List access$5100(io.flutter.view.AccessibilityBridge$SemanticsNode):1779:1779 -> y
     1:1:boolean access$5200(io.flutter.view.AccessibilityBridge$SemanticsNode):1779:1779 -> z
 io.flutter.view.AccessibilityBridge$TextDirection -> io.flutter.view.g$g:
-    io.flutter.view.AccessibilityBridge$TextDirection[] $VALUES -> d
-    io.flutter.view.AccessibilityBridge$TextDirection UNKNOWN -> a
-    io.flutter.view.AccessibilityBridge$TextDirection LTR -> b
-    io.flutter.view.AccessibilityBridge$TextDirection RTL -> c
     1:3:void <clinit>():1710:1712 -> <clinit>
     4:4:void <clinit>():1709:1709 -> <clinit>
     1:1:void <init>(java.lang.String,int):1709:1709 -> <init>
-    1:1:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1721:1721 -> a
-    2:2:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1719:1719 -> a
-    3:3:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1717:1717 -> a
+    1:1:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1721:1721 -> fromInt
+    2:2:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1719:1719 -> fromInt
+    3:3:io.flutter.view.AccessibilityBridge$TextDirection fromInt(int):1717:1717 -> fromInt
     1:1:io.flutter.view.AccessibilityBridge$TextDirection valueOf(java.lang.String):1709:1709 -> valueOf
     1:1:io.flutter.view.AccessibilityBridge$TextDirection[] values():1709:1709 -> values
 io.flutter.view.AccessibilityViewEmbedder -> io.flutter.view.AccessibilityViewEmbedder:
@@ -16901,11 +16754,6 @@ io.flutter.view.FlutterView$ViewportMetrics -> io.flutter.view.p$d:
     int physicalHeight -> c
     1:16:void <init>():88:103 -> <init>
 io.flutter.view.FlutterView$ZeroSides -> io.flutter.view.p$e:
-    io.flutter.view.FlutterView$ZeroSides[] $VALUES -> e
-    io.flutter.view.FlutterView$ZeroSides BOTH -> d
-    io.flutter.view.FlutterView$ZeroSides RIGHT -> c
-    io.flutter.view.FlutterView$ZeroSides LEFT -> b
-    io.flutter.view.FlutterView$ZeroSides NONE -> a
     1:4:void <clinit>():507:510 -> <clinit>
     5:5:void <clinit>():506:506 -> <clinit>
     1:1:void <init>(java.lang.String,int):506:506 -> <init>

@@ -103,7 +103,8 @@ class _HomePageState extends State<HomePage> {
 
   _startTimer() async {
     isStart = true;
-    alert = DateTime.now().add(Duration(minutes: 5));
+//    alert = DateTime.now().add(Duration(minutes: 5));
+    alert = DateTime.now().add(Duration(seconds: 15));
     if (nowPlackCount != null) {
       nowPlackCount += 1;
     } else {
