@@ -11,10 +11,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   DateTime alert;
   bool isStart = false;
-  int nowPlackCount;
   String readText;
   FlutterLocalNotificationsPlugin localNotificationsPlugin =
-      FlutterLocalNotificationsPlugin();
+  FlutterLocalNotificationsPlugin();
 
   initializeNotifications() async {
     var android = new AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -27,13 +26,12 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     alert = DateTime.now();
-//    nowPlackCount=0;
     parseValue();
     initializeNotifications();
   }
 
-  Future singleNotification(
-      DateTime datetime, String message, String subtext, int hashcode,
+  Future singleNotification(DateTime datetime, String message, String subtext,
+      int hashcode,
       {String sound}) async {
     var androidChannel = AndroidNotificationDetails(
       'channel-id',
@@ -50,19 +48,57 @@ class _HomePageState extends State<HomePage> {
         payload: hashcode.toString());
   }
 
+  Future<bool> _willPopCallback() async {
+    // await showDialog or Show add banners or whatever
+    // then
+    return false; // return true if the route to be popped
+  }
+
   @override
   Widget build(BuildContext context) {
-    final textStyle = Theme.of(context).textTheme.title;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Digiortho'),
-        leading: new Container(),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(40.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+    final textStyle = Theme
+        .of(context)
+        .textTheme
+        .bodyText1;
+    return WillPopScope(
+      onWillPop: _willPopCallback,
+      child: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(100.0),
+          child: AppBar(
+            flexibleSpace: Image(
+              image: AssetImage('assets/telsiz.jpg'),
+              fit: BoxFit.cover,
+            ),
+//          centerTitle: true,
+//          actions: [
+//            Image.asset(
+//              'assets/dental.png',
+//              height: 40,
+//              width: 40,
+//            ),
+//            SizedBox(
+//              width: 20,
+//            )
+//            //Sağ tarafa dayalı
+//          ],
+//          leading: Icon(Icons.access_alarm),
+            automaticallyImplyLeading: false,
+          ),
+        ),
+        body: Container(
+          color: Colors.white,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width,
+          height: MediaQuery
+              .of(context)
+              .size
+              .height,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
 //            Column(
 //              crossAxisAlignment: CrossAxisAlignment.start,
 //              mainAxisSize: MainAxisSize.min,
@@ -73,23 +109,33 @@ class _HomePageState extends State<HomePage> {
 //                ),
 //              ],
 //            ),
-            RaisedButton(
-              onPressed: _startTimer,
-              child: Text(
-                'Zamanlayıcıyı başlat',
-                style: textStyle,
+              Image.asset(
+                'assets/logo.jpg',
+                height: 100,
+                width: 200,
               ),
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Icon(
-                  Icons.alarm_on,
-                  color: Colors.green,
-                  size: 48,
+              RaisedButton(
+                shape: new RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(30.0)),
+                color: Colors.blueGrey[400],
+                onPressed: _startTimer,
+                child: Text(
+                  'Zamanlayıcıyı\n       Başlat',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 15,
+                  ),
                 ),
-                TimerBuilder.periodic(
+              ),
+              SizedBox(height: 20),
+
+              Icon(
+                Icons.alarm_on,
+                color: Colors.green,
+                size: 48,
+              ),
+              Container(
+                child: TimerBuilder.periodic(
                   Duration(seconds: 1),
                   alignment: Duration.zero,
                   builder: (context) {
@@ -98,41 +144,42 @@ class _HomePageState extends State<HomePage> {
                     return Text(formatDuration(difference), style: textStyle);
                   },
                 ),
-              ],
-            ),
-          ],
+              ),
+
+              SizedBox(height: 150),
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.help),
-        onPressed: () {
-          createHelpDialog(context);
-        },
+        floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          child: Icon(
+            Icons.help,
+            size: 60,
+            color: Colors.blueGrey,
+          ),
+          onPressed: () {
+            createHelpDialog(context);
+          },
+        ),
       ),
     );
   }
 
   _startTimer() async {
     isStart = true;
-//    alert = DateTime.now().add(Duration(minutes: 5));
-    alert = DateTime.now().add(Duration(seconds: 15));
-    if (nowPlackCount != null) {
-      nowPlackCount += 1;
-    } else {
-      nowPlackCount = 1;
-    }
-    String value = isStart.toString() +
-        ";" +
-        alert.toString() +
-        ";" +
-        nowPlackCount.toString();
+    alert = DateTime.now().add(Duration(days: 15));
+    //alert = DateTime.now().add(Duration(seconds: 15));
+
+    String value = isStart.toString() + ";" + alert.toString();
     FileUtils.saveToFile(value);
     _showNotification(alert);
-    initState();
   }
 
   String formatDuration(Duration d) {
     String lbl = "";
+    print("kaan girdi => $d");
+    print("isStart => $isStart");
     if (isStart == true) {
       String f(int n) {
         return n.toString().padLeft(2, '0');
@@ -141,28 +188,29 @@ class _HomePageState extends State<HomePage> {
       d += Duration(microseconds: 999999);
 
       lbl =
-          "Plak Değişimine Kalan\n${f(d.inDays)} gün ${f(d.inMinutes % 60)}:${f(d.inSeconds % 60)}";
+      "Plak Değişimine Kalan\n ${f(d.inDays)} gün ${f(d.inHours % 24)} saat ${f(
+          d.inMinutes % 60)}:${f(d.inSeconds % 60)}";
+      print("lbl => $lbl");
 
       if (d.inSeconds == 0) {
         _changeValue();
       }
     } else {
-      lbl = "Plak Değişimine Kalan\n 00 gün 00:00";
+      lbl = "Plak Değişimine Kalan\n 00 gün 00 saat 00:00";
     }
     return lbl;
   }
 
   _changeValue() {
     isStart = false;
-    nowPlackCount += 1;
     alert = DateTime.now();
   }
 
   _showNotification(DateTime time) async {
     await singleNotification(
       time,
-      '$nowPlackCount . Plak Değişimi',
-      'Plak değiştime zamanın geldi. Sakın unutma :) ',
+      'Plak Değişimi',
+      'Plak değiştime zamanın geldi. WhatsApp üzerinden hekiminle fotoğraf paylaşmayı unutma :)',
       98123871,
     );
   }
@@ -173,9 +221,20 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Nasıl Kullanırım ?'),
+          title: Text(
+            'Nasıl Kullanırım ?',
+            style: Theme
+                .of(context)
+                .textTheme
+                .title,
+          ),
           content: Text(
-              'Zamanlayıcıyı başlat butonu ile sayaç çalışmaya başlar ve her 15 günde bir sana hatırlatma gönderir.\n\nHer hatırlatma sonrası sayacı tekrar başlatmalısın yoksa 2 saatte bir sana uyarı mesajı gelecektir :) '),
+            'Zamanlayıcıyı başlat butonu ile sayaç çalışmaya başlar ve her 15 günde bir sana hatırlatma gönderir.\n\nUnutma her hatırlatma sonrası sayacı tekrar başlatmalısın :) ',
+            style: Theme
+                .of(context)
+                .textTheme
+                .caption,
+          ),
           actions: <Widget>[
             MaterialButton(
               elevation: 5.0,
@@ -192,7 +251,7 @@ class _HomePageState extends State<HomePage> {
 
   parseValue() async {
     readText = await FileUtils.readFromFile();
-    if (readText != null) {
+    if (readText != null && readText != '') {
       var arr = readText.split(';');
       var oldTime = DateTime.parse(arr[1]);
       var newTime = DateTime.now();
@@ -204,7 +263,6 @@ class _HomePageState extends State<HomePage> {
         isStart = arr[0].toLowerCase() == 'true';
         alert = oldTime;
       }
-      nowPlackCount = int.parse(arr[2]);
     }
   }
 }

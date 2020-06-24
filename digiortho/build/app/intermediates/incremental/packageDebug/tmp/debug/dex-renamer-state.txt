@@ -1,0 +1,4 @@
+#Wed Jun 24 20:58:15 EET 2020
+base.0=C\:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

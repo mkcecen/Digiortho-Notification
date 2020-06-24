@@ -21,8 +21,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 3), () => print("Splach Done!"));
-    Future.delayed(const Duration(seconds: 3), () async {
+    Timer(Duration(seconds: 2), () => print("Splach Done!"));
+    Future.delayed(const Duration(seconds: 2), () async {
       Navigator.push(
           context, new MaterialPageRoute(builder: (context) => new HomePage()));
     });
@@ -79,13 +79,13 @@ class _SplashScreenState extends State<SplashScreen> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
                     ),
-                    Text(
+                    /*Text(
                       "Kaan Çeçen",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 18.0,
                           fontWeight: FontWeight.bold),
-                    ),
+                    ),*/
                   ],
                 ),
               )

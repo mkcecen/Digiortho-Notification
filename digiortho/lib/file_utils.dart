@@ -10,6 +10,7 @@ class FileUtils {
 
   static Future<File> get getFile async {
     final path = await getFilePath;
+    print('path => $path');
     return File('$path/notification.txt');
   }
 

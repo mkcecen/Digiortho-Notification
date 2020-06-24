@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\e0e1f595b104922d18ef659a540496bc\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\e0e1f595b104922d18ef659a540496bc\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\e0e1f595b104922d18ef659a540496bc\\res\\drawable-v21\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\117fd956d36534d96cb9b016cabfa992\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\e0e1f595b104922d18ef659a540496bc\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\mkcec\\Desktop\\Digiortho-Notification\\digiortho\\build\\android_alarm_manager\\intermediates\\res\\merged\\release\\drawable-v21\\abc_list_divider_material.xml",
+        "source": "C:\\Users\\mkcec\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\e0e1f595b104922d18ef659a540496bc\\res\\drawable-v21\\abc_list_divider_material.xml"
+    }
+]
